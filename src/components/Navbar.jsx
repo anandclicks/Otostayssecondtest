@@ -1,6 +1,7 @@
 import React, { useContext,useEffect } from 'react'
 import { UserContext } from '../../ContextApi/Usercontext'
 import { Link } from "react-router-dom";
+import Logo from '/src/assets/otologo.png'
 function Navbar() {
   useEffect(()=> {
     setNavstate(prevState => !prevState)
@@ -15,7 +16,7 @@ function Navbar() {
       <div className="row row2 h-full">
         <div className="col-lg-4 col-6 navLeft">
          <Link to={'/'}>
-         <img className='logo rounded-5' src="/src/assets/otologo.png" alt="" />
+         <img className='logo rounded-5' src="{Logo}" alt="" />
          </Link>
         </div>
         <div className="col-lg-8 col-6 navRight justify-end ">
